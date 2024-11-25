@@ -3,10 +3,15 @@
 using namespace std;
 
 int main () {
-    int kopi; kopi = 3000;
-    int nasiBungkus; nasiBungkus = 7000; 
-    int airMineral; airMineral= 3000;
-    int indomie; indomie = 3000;
+   string kopi;
+    string nasiBungkus; 
+    string airMineral;
+    string indomie;
+    int hargakopi; hargakopi = 3000;
+    int harganasiBungkus; harganasiBungkus = 7000; 
+    int hargaairMineral; hargaairMineral= 3000;
+    int hargaindomie; hargaindomie = 3000;
+    int valueBarang[4] = {hargakopi, harganasiBungkus, hargaairMineral, hargaindomie};
     int uang; 
     int total;
     int kembalian;
@@ -14,13 +19,13 @@ int main () {
 
     cout << "Masukan nama pembeli! ";
      std::getline(std::cin, namaPembeli);
-     cout << "daftar belanjaaan pembeli"<< endl ;
-     cout << "1.kopi = "<<"Rp."<< kopi << endl ;
-       cout << "2.nasi bungkus = "<< "Rp."<<nasiBungkus<< endl ;
-         cout << "3.air mineral = "<< "Rp."<<airMineral<< endl ;
-           cout << "4.indomie = "<<"Rp."<<indomie << endl ;
+    cout << "List Barang" << endl;
+     cout << "1.kopi = "<<"Rp."<< hargakopi << endl ;
+       cout << "2.nasi bungkus = "<< "Rp."<<harganasiBungkus<< endl ;
+         cout << "3.air mineral = "<< "Rp."<<hargaairMineral<< endl ;
+           cout << "4.indomie = "<<"Rp."<<hargaindomie << endl ;
            cout<<"-----------------------"<<endl;
-       total = kopi + airMineral + nasiBungkus + indomie;
+       total = hargakopi + hargaairMineral + harganasiBungkus + hargaindomie;
        cout << "maka totalnya adalah Rp" << total<<endl;
          cout << "masukan nominal pembayaran!";
          cin >> uang;
